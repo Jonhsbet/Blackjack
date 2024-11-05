@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack - JonhsBet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Blackjack - JonhsBet 🃏</h1>
+
+    <div class="balance">Saldo: R$ <span id="saldo">1000.00</span></div>
+    <input type="number" id="aposta" placeholder="Valor da Aposta" min="10" step="10">
+    
+    <div class="hand" id="player-hand">
+        <h2>Suas Cartas:</h2>
+    </div>
+    <div class="hand" id="dealer-hand">
+        <h2>Cartas do Dealer:</h2>
+    </div>
+    
+    <div class="buttons">
+        <button class="button" onclick="jogar()">Novo Jogo</button>
+        <button class="button" onclick="hit()">Hit</button>
+        <button class="button" onclick="stand()">Stand</button>
+    </div>
+    
+    <div class="message" id="mensagem"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
