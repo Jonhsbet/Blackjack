@@ -131,4 +131,7 @@ function toggleFaq() {
 window.onload = () => {
     document.getElementById("faq-content").style.display = "none";
 };
+function abrirFAQ() {
+    window.open('faq.html', '_blank');
+}
 
