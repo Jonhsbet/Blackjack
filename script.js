@@ -120,3 +120,15 @@ function stand() {
 }
 
 atualizarSaldo();
+
+// Função para expandir ou colapsar a seção de ajuda
+function toggleFaq() {
+    const faqContent = document.getElementById("faq-content");
+    faqContent.style.display = faqContent.style.display === "none" || faqContent.style.display === "" ? "block" : "none";
+}
+
+// Inicializar o FAQ como oculto ao carregar a página
+window.onload = () => {
+    document.getElementById("faq-content").style.display = "none";
+};
+
